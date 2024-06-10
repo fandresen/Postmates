@@ -1,2 +1,2 @@
 # Postmates
-PostMates is a mini social media preject
+PostMates is a mini social media project
