@@ -1,4 +1,4 @@
-import axios from 'axios'
+import { axiosNormal } from './interceptor';
 
 interface propsT{
     url:string;
@@ -7,7 +7,7 @@ interface propsT{
 const sendDataLogin = async ({url,data}:propsT)=> {
     
         try {
-            const res = (await axios.post(url,data))
+            const res = (await axiosNormal.post(url,data))
             return res
         } catch (error) {
             console.log(error);

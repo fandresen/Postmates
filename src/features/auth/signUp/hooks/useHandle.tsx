@@ -27,7 +27,7 @@ export default function useHandleCreateUser() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         console.log(email, name, pwd, confirm_pwd);
-        const res = sendDataLogin({ url:"http://localhost:1337/api/users", data: {email:email,name:name,password:pwd,passwordConfirmation:confirm_pwd}})
+        const res = sendDataLogin({ url:"/users", data: {email:email,name:name,password:pwd,passwordConfirmation:confirm_pwd}})
         console.log(res)
     
     }

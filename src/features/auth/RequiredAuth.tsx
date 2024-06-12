@@ -1,12 +1,10 @@
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
-import useAuth from './hooks/useAuth'
+import { useSelector } from 'react-redux';
+import { RootState } from '@/redux/store';
 
 export default function RequiredAuth() {
-    const auth= useAuth();
-    const location = useLocation()
-  return (
-    auth?.auth.accessToken
-    ? <Outlet/>
-    : <Navigate to="/login" state={{from:location}} replace/>
-  )
+  const auth = useSelector<RootState>((state)=>state.auth.refreshToken)
+  const location = useLocation()
+
+  return auth !== ""? <Outlet /> : <Navigate to="/login" state={{ from: location }} replace />
 }
