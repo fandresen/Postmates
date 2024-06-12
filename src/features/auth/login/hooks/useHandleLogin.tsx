@@ -30,7 +30,7 @@ export default function useHandleLogin() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         console.log(email, password);
-        const res = await sendDataLogin({ url: "http://192.168.88.3:1337/api/sessions", data: { email: email, password: password } })
+        const res = await sendDataLogin({ url:"http://127.0.0.1:1337/api/sessions", data: { email: email, password: password } })
         //si il tout va bien
         if (res.status == 200) {
             setAccessToken(res.data.accessToken)
