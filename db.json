@@ -1,0 +1,12 @@
+{
+    "post":[
+        {
+            "title":"Exploring the Wonders of Nature: A Photographic Journey",
+            "desc":"Join Join us as we embark on a captivating exploration of the natural world,capturing its breathtaking beauty through the lens of our cameras",
+            "date": "2024-06-12T00:00:00Z",
+            "authorName":"Fandresena",
+            "authorAvatar":"src/components/Sidebar/assets/photo/pdp.jpeg",
+            "postImage":"src/components/Sidebar/assets/photo/pdp.jpeg"
+        }
+    ]
+}
