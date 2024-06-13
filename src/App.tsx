@@ -5,6 +5,7 @@ import SignUp from './pages/SignUp';
 import Layout from './layout/Layout';
 import Home from './pages/home';
 import RequiredAuth from './features/auth/RequiredAuth';
+import '@nextui-org/react/package.json';
 
 
 function App() {

@@ -11,24 +11,19 @@ import PostDesc from "./PostDesc";
 import PostImage from "./PostImage";
 import { dataT } from "../hooks/useFetchPost";
 
-
-export default function Component({props}: dataT) {
-
+export default function CardPublication({ ...props }: dataT) {
   return (
-    <Card className="w-[70vw] ml-[2vw] rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+    <Card className="w-[50vw] min-h-[65vh] ml-[2vw] my-10 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden bg-white">
       <div className="p-4 flex items-center gap-4">
         <AvatarPdp src={props.authorAvatar} />
         <div>
-          <Author name={props.authorName}/>
+          <Author name={props.authorName} />
           <PublishDate date={new Date(props.date)} />
         </div>
       </div>
-      <PostImage url={props.postImage}/>
+      <PostImage url={props.postImage} />
       <div className="p-4 space-y-2">
-        <PostDesc
-          title={props.title}
-          desc={props.desc}
-        />
+        <PostDesc title={props.title} desc={props.desc} />
       </div>
     </Card>
   );

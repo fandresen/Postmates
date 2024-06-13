@@ -9,8 +9,8 @@ export default function Menu() {
   const dispatch = useDispatch<AppDispatch>();
   return (
     <>
-      <aside className=" w-[18vw] bg-white border-r rtl:border-r-0 rtl:border-l border-[rgba(201,201,201,0.3)] dark:bg-gray-900 dark:border-gray-700">
-        <div className="fixed h-screen flex flex-col px-4 py-8 overflow-y-auto left-5">
+      <aside className="w-[35vw]">
+        <div className="fixed h-screen w-[20vw] flex flex-col px-4 py-8 z-50 overflow-y-auto left-[5vw] bg-white border-r rtl:border-r-0 rtl:border-l border-[rgba(201,201,201,0.3)] dark:bg-gray-900 dark:border-gray-700">
           <div className="flex flex-col items-center mt-[2vh] -mx-2">
             <Pdp src="src/components/Sidebar/assets/photo/pdp.jpeg" />
             <UserInfo bio="I can't live without my life" name="fandresena" />
